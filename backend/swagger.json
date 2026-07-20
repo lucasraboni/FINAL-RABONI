@@ -1,0 +1,29 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Vinyl Vibes API",
+    "description": "API de tienda de vinilos de musica electronica - Parcial 1 Aplicaciones Hibridas",
+    "version": "1.0.0"
+  },
+  "host": "localhost:3333",
+  "basePath": "/api",
+  "schemes": ["http"],
+  "paths": {
+    "/vinilos": {
+      "get": { "description": "Traer todos los vinilos. Filtros: ?genero=techno&precio_max=50", "parameters": [], "responses": { "200": { "description": "OK" } } },
+      "post": { "description": "Crear un vinilo", "parameters": [], "responses": { "201": { "description": "Created" } } }
+    },
+    "/vinilos/{id}": {
+      "get": { "description": "Traer un vinilo por ID", "parameters": [], "responses": { "200": { "description": "OK" }, "404": { "description": "Not Found" } } },
+      "patch": { "description": "Editar un vinilo", "parameters": [], "responses": { "200": { "description": "OK" } } },
+      "delete": { "description": "Borrar un vinilo (soft-delete)", "parameters": [], "responses": { "200": { "description": "OK" } } }
+    },
+    "/artistas": {
+      "get": { "description": "Traer todos los artistas", "parameters": [], "responses": { "200": { "description": "OK" } } },
+      "post": { "description": "Crear un artista", "parameters": [], "responses": { "201": { "description": "Created" } } }
+    },
+    "/artistas/{id}/vinilos": {
+      "get": { "description": "Traer todos los vinilos de un artista", "parameters": [], "responses": { "200": { "description": "OK" } } }
+    }
+  }
+}

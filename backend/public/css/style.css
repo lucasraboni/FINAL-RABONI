@@ -1,0 +1,122 @@
+/* ESTILOS GLOBALES      */
+body {
+    font-family: "League Spartan", sans-serif;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: white;
+}
+
+/* COLORES Y LINKS       */
+.bs-purpura { color: #8342ea; }
+
+a {
+    color: #8342ea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover { color: #6a34c2; }
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+.links:hover { color: #8342ea; }
+
+.nav-link { color: black !important; }
+.nav-link:hover { color: #8342ea !important; }
+
+/* BOTONES               */
+.btn-admin {
+    background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.btn-admin:hover {
+    background: linear-gradient(45deg, #5a0dbd 0%, #1c6dfa 100%);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-dark {
+    background-color: #212529;
+    border-color: #212529;
+    transition: all 0.3s ease;
+    color: white;
+}
+.btn-dark:hover {
+    background-color: #343a40;
+    transform: translateY(-2px);
+    color: white;
+}
+
+/* TARJETAS DE VINILOS   */
+.bg-black {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bg-black:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(131, 66, 234, 0.2);
+}
+
+/* Imagen con efecto hover */
+.image-container {
+    position: relative;
+    width: 100%;
+}
+.image-container img {
+    width: 100%;
+    transition: opacity 0.5s ease;
+}
+.image-container img.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.image-container:hover img.hover-image {
+    opacity: 1;
+}
+
+.descripcion-tarjeta {
+    height: 200px;
+    overflow: hidden;
+}
+
+.logo-vinilo {
+    width: 100px;
+    height: 100px;
+}
+
+/* FORMULARIOS           */
+.form-control,
+.form-select,
+textarea {
+    background-color: #343a40 !important;
+    border: 1px solid #495057;
+    color: white !important;
+}
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
+    border-color: #8342ea;
+    box-shadow: 0 0 0 0.25rem rgba(131, 66, 234, 0.25);
+}
+
+/* DROPDOWN              */
+.dropdown-item:hover {
+    background-color: #8342ea;
+    color: white !important;
+}

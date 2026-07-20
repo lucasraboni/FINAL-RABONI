@@ -1,0 +1,19 @@
+# Dependencias
+node_modules/
+**/node_modules/
+
+# Variables de entorno (se entregan aparte)
+.env
+**/.env
+.env.local
+.env.production
+
+# Build del frontend
+frontend/dist/
+
+# Cache de Firebase
+.firebase/
+
+# Logs y sistema
+*.log
+.DS_Store
